@@ -1,3 +1,4 @@
+// Subscribes to the topic number via Int32MultiArray messages
 #include "ros/ros.h"   
 #include <stdlib.h>
 #include "std_msgs/Int32MultiArray.h"
