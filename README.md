@@ -18,3 +18,14 @@ cd ..
 
 catkin_make
 
+Running the launch file // source the setup.bash if not working properly
+
+$ roslaunch subscriber_publisher sub_pub.launch 
+
+For running individual nodes // source the setup.bash if not working properly
+
+$ rosrun subscriber_publisher publisher
+
+$ rosrun subscriber_publisher subscriber
+
+$rosrun 
