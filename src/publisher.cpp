@@ -1,3 +1,4 @@
+   //num_pub publishes to the topic number by meassages of type Int32MultiArray
    #include <stdio.h>
    #include <stdlib.h>
    #include<vector>
