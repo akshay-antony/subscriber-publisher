@@ -13,7 +13,8 @@ void numCallBack(const std_msgs::Int32MultiArray::ConstPtr& arr)
 	for(std::vector<int>::const_iterator it = arr->data.begin(); it != arr->data.end(); ++it)
 	{
 		Arr[i] = *it;
-		ROS_INFO("%x", Arr[i]);
+		if(i==1)
+		ROS_INFO_STREAM("Random Number Subscribed from topic "<< Arr[0]<<" " <<Arr[1]);
 		++i;
 	}
 

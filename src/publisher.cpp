@@ -12,24 +12,21 @@
  
      ros::init(argc, argv, "numbers");
      ros::NodeHandle n;
-     ros::Publisher num_pub = n.advertise<std_msgs::Int32MultiArray>("number", 1000);
-     ros::Rate loop_rate(10);
+     ros::Publisher num_pub = n.advertise<std_msgs::Int32MultiArray>("number", 100);
+     ros::Rate loop_rate(1);
      int count = 0;
      while (ros::ok())
      {
 
-       std_msgs::Int32MultiArray arr; // first member stores angular velocity and second linear velocit
-   
+       std_msgs::Int32MultiArray arr; 
        arr.data.clear();
 
        for(int i=0;i<2;++i)
        	 {
        	 	arr.data.push_back( rand() % 10 + 1);
        	 }
-       //cout<<arr.data[0];
-       ROS_INFO("Random Numbers Received");
-         
- 
+       ROS_INFO_STREAM("Random Numbers Published : "<< arr.data[0] <<" "<<arr.data[1] );
+      
      num_pub.publish(arr);
   
       ros::spinOnce();
