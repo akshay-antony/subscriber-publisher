@@ -1,0 +1,4 @@
+<launch>
+	<node name="numbers" pkg="subscriber_publisher" type="publisher" />
+	<node name="number_subscibtion" pkg="subscriber_publisher" type="subscriber"  output="screen" />
+</launch>
