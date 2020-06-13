@@ -1,6 +1,6 @@
 # subscriber-publisher
- A ROS package for subscribing and publishing to a topic via messages of type Int32MultiArray
-Steps for running the pacakge
+ A ROS package for subscribing and publishing to a topic via messages of type Int32MultiArray.
+        Steps for running the pacakge
 
 mkdir -p ~/catkin_ws/src
 
