@@ -1,4 +1,4 @@
-// Subscribes to the topic number via Int32MultiArray messages
+// Subscribes to the topic number via Int32MultiArray messages.
 #include "ros/ros.h"   
 #include <stdlib.h>
 #include "std_msgs/Int32MultiArray.h"
@@ -15,7 +15,7 @@ void numCallBack(const std_msgs::Int32MultiArray::ConstPtr& arr)
 	{
 		Arr[i] = *it;
 		if(i==1)
-		ROS_INFO_STREAM("Random Number Subscribed from topic "<< Arr[0]<<" " <<Arr[1]);
+		ROS_INFO_STREAM("Random Numbers Subscribed from topic "<< Arr[0]<<" " <<Arr[1]);
 		++i;
 	}
 
